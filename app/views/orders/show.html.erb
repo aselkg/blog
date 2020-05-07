@@ -1,0 +1,10 @@
+<h3>Product name:</h3>
+<p><%= @order.product_name %><p>
+<h3>Product count:</h3>
+<p><%= @order.product_count %></p>
+<h3>Ordered by:</h3>
+<p><%= @order.customer.full_name %></p>
+
+<button><%= link_to 'Edit', edit_order_path(@order) %></button>
+<button><%= link_to 'Delete', @order, method: :delete %></button>
+<button><%= link_to 'Back', orders_path %></button>
